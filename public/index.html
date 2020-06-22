@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA API Project</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<header>
+  <h1><span>NASA API <br>Astronomy Picture of the Day</span></h1>
+  <h3>Enter A Date:</h3>
+  <h4>Can enter a current or previous date. Cannot enter a date in the future.</h4>
+    <form>
+   <input id="date" type="date" name="" value="" placeholder="YYYY-MM-DD Format Only">
+   <br><br>
+   <input id="submit" type="submit">
+    </form>
+  </header>
+  <h2></h2>
+   <img src="" alt="">
+   <p id="description"></p>
+
+<script src="index.js"></script>
+
+<!--FIREBASE-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC_6D_AjXz8aYAOeJNWqmlC2y7y1ZkXLYQ",
+    authDomain: "amr-api-1829e.firebaseapp.com",
+    databaseURL: "https://amr-api-1829e.firebaseio.com",
+    projectId: "amr-api-1829e",
+    storageBucket: "amr-api-1829e.appspot.com",
+    messagingSenderId: "332764415714",
+    appId: "1:332764415714:web:5abc0459d635ed769380bb"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</body>
+</html>
